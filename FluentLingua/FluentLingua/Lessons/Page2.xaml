@@ -1,0 +1,146 @@
+﻿<Page x:Class="FluentLingua.Lessons.Page2"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FluentLingua.Lessons"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Page2">
+    <Page.Resources>
+        <Style TargetType="TextBlock" x:Key="TextStyle">
+            <Setter Property="Grid.Column" Value="1"/>
+            <Setter Property="FontSize" Value="17"/>
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+        </Style>
+    </Page.Resources>
+    <Grid>
+        <ScrollViewer>
+            <StackPanel>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="7*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Viewbox Grid.Row="0" Grid.Column="1">
+                        <Image Margin="30" x:Name="Alphabet" Visibility="Visible" Source="turkish-characters.jpg"/>
+                    </Viewbox>
+
+                    <TextBlock Grid.Row="1" Style="{StaticResource TextStyle}">В турецком языке 29 букв.</TextBlock>
+                    <TextBlock Grid.Row="2" Style="{StaticResource TextStyle}">Гласными являются - a, ı, о, u, e, i, ö, ü</TextBlock>
+                    <TextBlock Grid.Row="3" Style="{StaticResource TextStyle}">Согласными являются - b c ç d f g ğ h k l m n p r s ş t v y z</TextBlock>
+                    <TextBlock Grid.Row="4" Style="{StaticResource TextStyle}">Сочетание
+                    буквы «y» с гласными и согласными</TextBlock>
+
+                    <TextBlock Grid.Row="5" Style="{StaticResource TextStyle}">В турецком языке при сочетании буквы «y»
+                    с гласными возникают так называемые дифтонги:</TextBlock>
+
+                    <TextBlock Grid.Row="6" Style="{StaticResource TextStyle}">1. y + гласная</TextBlock>
+                    <Image Grid.Row="7" Grid.Column="1" Source="y+vowel.jpg"></Image>
+                    <Button Grid.Row="8" Grid.Column="1" Click="Button_Click_1" Content="primer"/>
+
+                    <TextBlock Grid.Row="9" Style="{StaticResource TextStyle}">2. гласная + y</TextBlock>
+                    <Image Grid.Row="10" Grid.Column="1" Source="vowel+y.jpg"></Image>
+                    <Button Grid.Row="11" Grid.Column="1" Click="Button_Click_2" Content="primer"/>
+
+                    <TextBlock Grid.Row="12" Style="{StaticResource TextStyle}">3. Сочетание согласных с буквой «y»</TextBlock>
+                    <TextBlock Grid.Row="13" Style="{StaticResource TextStyle}">Произношение некоторых согласных,
+                        стоящих перед «y», смягчается:
+                        Estonya - [Эстонья] ; İspanya - [Испанья]</TextBlock>
+
+                    <TextBlock Grid.Row="14" Grid.Column="1" HorizontalAlignment="Center">Ударение</TextBlock>
+                    <TextBlock Grid.Column="1" Grid.Row="15" TextWrapping="Wrap" >В турецком языке в большинстве
+                    случаев ударение падает на последний слог слова.
+                    Исключение составляют некоторые наречия и
+                    заимствованные слова, географические названия.</TextBlock>
+                    <Button Grid.Row="16" Grid.Column="1" Content="prim" Click="Button_Click_3"/>
+
+                    <TextBlock Grid.Row="17" Style="{StaticResource TextStyle}">
+                    Dàima - всегда;	 	nàsıl - как;
+                    Bùrsa - Бурса;	 	İ̀zmir - Измир;
+                    Sinèma - кино;	 	gazète - газета
+                    </TextBlock>
+                    <TextBlock Grid.Row="18" Foreground="Teal" Style="{StaticResource TextStyle}" >Дополнительные значки, используемые в турецкой графике</TextBlock>
+                    <TextBlock Grid.Row="19" Style="{StaticResource TextStyle}" >Иногда в турецкой графике можно встретить два значка:</TextBlock>
+                    <TextBlock Grid.Row="20" Style="{StaticResource TextStyle}" >1. ˆ — знак смягчения и
+                        продолжения, удлинения. Удлиняет гласные a, u, стоящие после согласных g, k, l: 
+                        Kâbus (кошмар), rüzgâr (ветер), selâm (привет);
+                        В некоторых словах этот значок играет смыслоразличительную роль. Ср.:
+                        Âlem - мир
+                        Alem - полумесяц на мечети
+                        Dâhi - гений
+                        Dahi - даже, также
+                    </TextBlock>
+                    <TextBlock Grid.Row="21" Style="{StaticResource TextStyle}" >
+                        2. ` - отделительный
+                        знак. Используется для отделения падежных аффиксов в именах собственных:
+                        İstanbul`da - в Стамбуле;
+                        Ahmet`in arabası - машина Ахмета.
+                    </TextBlock>
+                    <TextBlock Grid.Row="22" Foreground="Teal" Style="{StaticResource TextStyle}">Слова и выражения</TextBlock>
+                    <TextBlock Grid.Row="23" Style="{StaticResource TextStyle}">
+                        Merhaba! - Здравствуй(-те) <LineBreak/>
+                        Nasılsın? - Как дела? <LineBreak/>
+                        Teşekkür ederim - Спасибо <LineBreak/>
+                        Günaydın! - Доброе утро! <LineBreak/>
+                        İyi günler! - Добрый день! <LineBreak/>
+                        İyi akşamlar! - Добрый вечер! <LineBreak/>
+                        İyi geceler! - Спокойной ночи! <LineBreak/>
+                        Hoşça kal(ın)! - Будьте здоровы! <LineBreak/>
+                        Güle güle! - Всего хорошего! <LineBreak/>
+                    </TextBlock>
+                    <Button Grid.Row="24" Grid.Column="1" Content="Прослушать (9 сек)" Click="Button_Click_6"/>
+
+
+
+
+
+
+                    <Button Grid.Column="1" Grid.Row="17" Height="40" Name="DoneBtn" FontSize="20" Click="DoneBtn_Click">Готово</Button>
+                </Grid>
+                
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>

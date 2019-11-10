@@ -1,0 +1,90 @@
+﻿<Page x:Class="FluentLingua.Lessons.Page1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FluentLingua.Lessons"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Page1">
+    <Page.Resources>
+        <Style TargetType="TextBlock" x:Key="TextStyle">
+            <Setter Property="Grid.Column" Value="1"/>
+            <Setter Property="FontSize" Value="17"/>
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+        </Style>
+    </Page.Resources>
+    <Grid>
+        <ScrollViewer>
+            <StackPanel>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="7*" />
+                        <ColumnDefinition Width="1*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <!--<TextBlock Grid.Row="0" Style="{StaticResource TextStyle}">
+                        На создание этого приложения, меня побудила в первую очередь
+                        история турков, насчитывающая века противостояний, завоеваний; а также удивительную
+                        схожесть тюрских языков, носителем одного из которых я сам и являюсь - башкирский язык
+                        схож с турецким на ~40% в лексиконе, а идентичность грамматики и словообразования не дадут
+                        соврать[что они в одной группе(написать получше)]. Содержание курса я взял с сайта - lingust.ru
+                    </TextBlock>-->
+                    <Image Grid.Row="1" Grid.Column="1" Margin="10" Height="300" Source="turkic.jpg"></Image>
+                    <TextBlock Grid.Row="2" Style="{StaticResource TextStyle}">
+                        Являясь мостом между Европой и Ближним Востоком,
+                        Турция и турецкий язык с давних времен привлекали
+                        внимание людей из разных частей света. На сегодняшний день,
+                        в среднем, около 100 млн. человек говорят на турецком языке.
+                    </TextBlock>
+                    <Image Grid.Row="3" Grid.Column="1" Source="HagiaSophia.jpg" Margin="10" Height="300"/>
+                    <Label Grid.Row="4" Grid.Column="1" FontSize="20" HorizontalAlignment="Center">Интересные факты о турецком языке</Label>
+                    <TextBlock Grid.Row="5" Style="{StaticResource TextStyle}">
+                        > В турецком языке практически полностью отсутствуют
+                        исключения из грамматических правил. Плюс ко всему,
+                        слова в нём читаются так же, как и пишутся.
+                        Существительные не имеют родов, глаголы не меняют
+                        окончание в зависимости от рода, а слова в предложении
+                        всегда имеют строго определённую позицию. Это заметно
+                        облегчает изучение турецкого!
+                    </TextBlock>
+                    <TextBlock Grid.Row="6" Style="{StaticResource TextStyle}">
+                        > Самое распространённое слово в турецком языке – güzel.
+                        Универсальное слово! Оно значит и «хорошо», и «вкусно»,
+                        и «красиво». И погода гюзель, и девушка гюзель, и
+                        пахлава гюзель, и всё вообще гюзель.
+                    </TextBlock>
+                    <TextBlock Grid.Row="7" Style="{StaticResource TextStyle}">
+                        > Турецкий язык относится к числу агглютинативных,
+                        т.е. когда к слову добавляются различные аффиксы
+                        и суффиксы, и оно меняет грамматические формы. В
+                        итоге полученный результат может заменить собой
+                        целое предложение.
+                    </TextBlock>
+                    <TextBlock Grid.Row="8" Style="{StaticResource TextStyle}">
+                        > Основой для литературного турецкого служит
+                        стамбульский диалект, который, как считается,
+                        начал складываться примерно в 15 веке.
+                        Впоследствии в нём появилось огромное количество
+                        заимствований из арабского и персидского. По
+                        некоторым данным, к началу 19 века около 80%
+                        всех турецких слов были иностранного происхождения.
+                    </TextBlock>
+                </Grid>
+                
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>
